@@ -1,0 +1,7 @@
+@import url("MinecraftTen_VGORe/stylesheet.css");
+@font-face {
+	font-family: 'minecraft font';
+	src: url('minecraft_font.ttf') format('truetype');
+}.Text {
+	font-family: MinecraftTen VGORe;
+}
