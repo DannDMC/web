@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Encantamientos</title>
+<style type="text/css">
+body {
+	background-image: url(../Backgrounds/librerias.png);
+}
+.a {
+	color: rgba(233,233,233,1);
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <table background="../Backgrounds/clear.png" width="900" border="2" cellspacing="4">
+    <tr>
+      <td><h2 align="center">¿Qué son?</h2>
+      <p align="center">&nbsp;</p>
+      <h4 align="center">El <strong>encantamiento</strong> (<em>Enchantment</em> en la versión original del juego) es una mecánica del juego que aumenta armaduras, herramientas, armas y libros con uno o más efectos, denominados &quot;encantamientos&quot;, y que mejoran las habilidades existentes de un objeto o los imbuyen con habilidades o usos adicionales. Además, aparecerá una animación de brillo especial en aquellos objetos que estén encantados.</h4>
+      <p align="center"><img src="Enchantment_Table_animated_experience.gif" width="600" height="338" /></p>
+      <p align="center">&nbsp;</p>
+      <table data-description="Enchanting equipment">
+        <tbody>
+          <tr>
+            <th><h3>Nombre</h3></th>
+            <th><h3 align="center">Icono</h3></th>
+            <th><h3>Uso</h3></th>
+          </tr>
+          <tr>
+            <th scope="row"> <h4>Mesa de encantamientos</h4></th>
+            <td><div align="center"><span data-minetip-title="Mesa de encantamientos"><img src="Enchanting_Table.gif" width="30" height="30" /></span></div></td>
+            <td>Su función es encantar objetos y libros.</td>
+          </tr>
+          <tr>
+            <th scope="row"> <h4>Librería</h4></th>
+            <td><div align="center"><a href="https://minecraft.fandom.com/es/wiki/Librer%C3%ADa" title="Librería"><span title="Librería"> </span></a><img src="libreria.webp" width="30" height="30" /></div></td>
+            <td>Cada librería (hasta 15) aumenta el nivel (poder) de los encantamientos conseguidos por la mesa de encantamientos.</td>
+          </tr>
+          <tr>
+            <th scope="row"> <h4>Lapislázuli</h4></th>
+            <td><div align="center"><a href="https://minecraft.fandom.com/es/wiki/Lapisl%C3%A1zuli" title="Lapislázuli"><span title="Lapislázuli"> </span></a><img src="Lapis_Lazuli_JE2_BE2.webp" width="30" height="30" /></div></td>
+            <td>Requerido para darle poder a la mesa de encantamiento.</td>
+          </tr>
+          <tr>
+            <th scope="row"> <h4>Yunque</h4></th>
+            <td><div align="center"><a href="https://minecraft.fandom.com/es/wiki/Yunque" title="Yunque"><span title="Yunque"> </span></a><img src="yunque.png" width="30" height="30" /></div></td>
+            <td>Sirve para combinar objetos (herramientas, armaduras, y armas) o reparar un objeto conservando encantamientos.</td>
+          </tr>
+          <tr>
+            <th scope="row"> <h4>Afiladora</h4></th>
+            <td><div align="center"><a href="https://minecraft.fandom.com/es/wiki/Afiladora" title="Afiladora"><span title="Afiladora"> </span></a><img src="afiladora.webp" width="30" height="30" /></div></td>
+            <td>Sirve para eliminar todos los encantamientos (excepto las maldiciones) en un objeto devolviendo un poco de experiencia, o para reparar un objeto sin devolver experiencia.</td>
+          </tr>
+          <tr>
+            <th scope="row"> <h4>Libro encantado</h4></th>
+            <td><div align="center"><img src="libro encantado.gif" width="30" height="30" /></div></td>
+            <td>Puede combinarse con otro objeto en un yunque para agregarle encantamientos a dicho objeto.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p align="center">&nbsp;</p>
+      <table bgcolor="#A9A9A9" border="3" cellspacing="2">
+        <caption>
+          Lista de encantamientos
+          </caption>
+        <tbody>
+          <tr bgcolor="#444444" class="a">
+            <th>Nombre de encantamiento</th>
+            <th>Resumen descriptivo</th>
+          </tr>
+          <tr>
+            <td rowspan="4">Afinidad acuática / Afinidad al agua</td>
+            <td>  Efecto: Aumenta la velocidad de las herramientas al minar bajo agua.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Agilidad acuática</td>
+            <td>  Efecto: Aumenta la velocidad de movimiento del jugador bajo el agua.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 3</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Aspecto ígneo</td>
+            <td>  Efecto: Hace que los ataques cuerpo a cuerpo quemen al objetivo.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: II</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Atracción</td>
+            <td>  Efecto: Disminuye el tiempo de espera hasta que el botín &quot;muerda&quot; el anzuelo al pescar.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Barrido ‌[<em><span title="Esta afirmación solo se aplica a Java Edition.">Solo <em>Java Edition</em></span></em>]</td>
+            <td>  Efecto: Aumenta el daño de ataque de barrido de una espada.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Botín</td>
+            <td>  Efecto: Incrementa la cantidad de elementos soltados tras matar <a href="../Mobs/mobs.html" title="Criatura">criaturas</a>.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Caída de pluma</td>
+            <td>  Efecto: Reduce el daño por caída.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: IV</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Carga rápida</td>
+            <td>  Efecto: Disminuye el tiempo de carga de una ballesta.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Conductividad</td>
+            <td>  Efecto: Invoca un rayo dirigido a una entidad golpeada por un tridente.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 1</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Eficiencia</td>
+            <td>  Efecto: Aumenta la velocidad al minar.<br />
+              En hachas, incrementa la probabilidad de que puedan aturdir un escudo, con una probabilidad inicial de 25% que incrementa un 5% por cada nivel.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: V</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 10</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Empalamiento</td>
+            <td>  Efecto: Con un tridente, inflige más daño a criaturas acuáticas.<br />
+              En Bedrock Edition, también inflige daño extra a jugadores o criaturas en agua o bajo lluvia.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: V</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Empuje</td>
+            <td>  Efecto: Aumenta el empuje al atacar.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: II</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Espinas</td>
+            <td>  Efecto: Refleja algo del daño recibido al ser golpeado.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 1</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Filo</td>
+            <td>  Efecto: Aumenta el daño de armas cuerpo a cuerpo.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: V</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 10</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Fortuna</td>
+            <td>  Efecto: Incrementa la cantidad de objetos soltados tras romper ciertos bloques.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Fuego</td>
+            <td>  Efecto: Hace que las flechas quemen al objetivo, y que enciendan dinamita si la golpean.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Golpeo</td>
+            <td>  Efecto: Aumenta el daño hacia las criaturas no muertas.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: V</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Hendimiento ‌[<em><span title="Esta declaración se aplica solo a las próximas versiones de Minecraft.">próximamente:</span> JE Combat Tests</em>]</td>
+            <td>  Efecto: Aumenta el daño y el aturdimiento hacia los escudos.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: Desconocido</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Infinidad</td>
+            <td>  Efecto: Disparar con un arco no consume flechas normales.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 1</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Irrompibilidad</td>
+            <td>  Efecto: Reduce la probabilidad de que un objeto sufra daños.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td height="23">  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Lealtad</td>
+            <td>  Efecto: Hace retornar un tridente después de haber sido lanzado.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Maldición de desaparición</td>
+            <td>  Efecto: El objeto se destruye al morir el jugador.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 1</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: Sí</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Maldición de ligamiento</td>
+            <td>  Efecto: Los objetos no se pueden quitar de las ranuras de armadura, salvo tras morir, en modo creativo o si se rompen.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 1</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: Sí</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Multidisparo</td>
+            <td>  Efecto: Dispara 3 flechas desde una ballesta a modo de expansión al coste de una.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Paso helado</td>
+            <td>  Efecto: Convierte el agua bajo un jugador en hielo escarchado temporalmente y previene que el jugador reciba daño de bloques de magma.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: II</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: Sí</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Perdición de los artrópodos</td>
+            <td>  Efecto: Aumenta el daño a las criaturas atrópodo y les inflige Lentitud IV.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: V</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Perforación</td>
+            <td>  Efecto: Hace que las flechas disparadas por ballestas atraviesen entidades y escudos.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: IV</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 10</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Poder</td>
+            <td>  Efecto: Aumenta el daño de las flechas disparadas por arcos.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: V</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 10</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Propulsión acuática</td>
+            <td>  Efecto: Propulsa al jugador consigo cuando se lanza un tridente desde agua o bajo lluvia.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Protección</td>
+            <td>  Efecto: Reduce la mayoría de tipos de daño por 4% ‌[<em><span title="Esta afirmación solo se aplica a Java Edition.">Solo <em>JE</em></span></em>] o 5% ‌[<em><span title="Esta afirmación solo se aplica a Bedrock Edition.">Solo BE</span></em>] por cada nivel.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: IV</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 10</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Protección contra el fuego</td>
+            <td>  Efecto: Reduce el daño por fuego y el tiempo de quemadura.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: IV</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Protección contra explosiones</td>
+            <td>  Efecto: Reduce el daño y empuje por explosión.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: IV</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Protección contra proyectiles</td>
+            <td>  Efecto: Reduce el daño por proyectiles.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: IV</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 5</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Reparación</td>
+            <td>  Efecto: Repara el objeto utilizando orbes de experiencia.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: Sí</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Respiración</td>
+            <td>  Efecto: Extiende el tiempo de respiración bajo el agua. Se acopla con los efectos de un caparazón de tortuga.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Retroceso</td>
+            <td>  Efecto: Aumenta el empuje que infligen las flechas.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: II</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Sigilo veloz</td>
+            <td>  Efecto: permite al jugador caminar más rápido mientras se agacha.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 1</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: Sí</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Suerte marina</td>
+            <td>  Efecto: Incrementa la tasa de buen botín al pescar.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 2</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Toque de seda</td>
+            <td>  Efecto: Permite minar ciertos bloques que normalmente no pueden ser minados.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: I</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 1</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: No</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Velocidad del alma</td>
+            <td>  Efecto: Aumenta la velocidad al caminar sobre arena de almas o tierra de almas, pero daña las botas con el tiempo.</td>
+          </tr>
+          <tr>
+            <td>  Nivel máximo: III</td>
+          </tr>
+          <tr>
+            <td>  Peso de encantamiento: 1</td>
+          </tr>
+          <tr>
+            <td>  Hallado solo como tesoro: Sí</td>
+          </tr>
+        </tbody>
+      </table>
+      <p align="center">&nbsp;</p></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
