@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛏ Cuestionario de Minecraft</title>
+    <link rel="stylesheet" href="estilos_minecraft.css">
+</head>
+<body>
+</form>
+    <div class="contenedor-cuestionario">
+        <h2 class="titulo-minecraft">Cuestionario Básico de Minecraft</h2>
+        <form action="/procesar_cuestionario" method="post" class="formulario-minecraft">
+            
+            <fieldset class="pregunta-box">
+                <legend class="legend-minecraft">1. ¿Cuál es el mineral más común en Minecraft?</legend>
+                <div class="opcion-minecraft">
+                    <input type="radio" id="carbon" name="pregunta1" value="carbon">
+                    <label for="carbon">Carbón</label>
+                </div>
+                <div class="opcion-minecraft">
+                    <input type="radio" id="diamante" name="pregunta1" value="diamante">
+                    <label for="diamante">Diamante</label>
+                </div>
+                <div class="opcion-minecraft">
+                    <input type="radio" id="hierro" name="pregunta1" value="hierro">
+                    <label for="hierro">Hierro</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <fieldset class="pregunta-box">
+                <legend class="legend-minecraft">2. ¿Cómo se llama el jefe final del Nether?</legend>
+                <div class="opcion-minecraft">
+                    <input type="radio" id="ender_dragon" name="pregunta2" value="ender_dragon">
+                    <label for="ender_dragon">Ender Dragon</label>
+                </div>
+                <div class="opcion-minecraft">
+                    <input type="radio" id="wither" name="pregunta2" value="wither">
+                    <label for="wither">Wither</label>
+                </div>
+                <div class="opcion-minecraft">
+                    <input type="radio" id="anciano_marino" name="pregunta2" value="anciano_marino">
+                    <label for="anciano_marino">Anciano Marino</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <div class="pregunta-box">
+                <label for="pregunta3" class="label-minecraft">3. Menciona un mob pasivo que se pueda domesticar:</label><br>
+                <input type="text" id="pregunta3" name="pregunta3" required class="input-minecraft"><br><br>
+            </div>
+
+        </form>
+        <form id="cuestionarioMinecraft" action="#" method="post" class="formulario-minecraft">
+    <button type="submit" class="boton-minecraft">
+        Enviar Respuestas
+    </button>
+</form>
+    </div>
+<script>
+    // 1. Definir las respuestas correctas
+    const respuestasCorrectas = {
+        pregunta1: "carbon", // El carbón es el más común
+        pregunta2: "wither", // El Wither es el jefe del Nether
+        pregunta3: ["lobo", "gato", "loro", "caballo", "burro", "mula", "llama"] // Opciones válidas para domesticar
+    };
+
+    // 2. Obtener el formulario por su ID
+    const formulario = document.getElementById('cuestionarioMinecraft');
+
+    // 3. Escuchar el evento de envío del formulario
+    formulario.addEventListener('submit', function(evento) {
+        // Prevenir que el formulario se envíe de la manera tradicional (recarga la página)
+        evento.preventDefault();
+
+        let puntuacion = 0;
+        const totalPreguntas = 3;
+        const datosFormulario = new FormData(formulario);
+
+        // --- Evaluación Pregunta 1 (Radio) ---
+        const respuesta1 = datosFormulario.get('pregunta1');
+        if (respuesta1 === respuestasCorrectas.pregunta1) {
+            puntuacion++;
+        }
+
+        // --- Evaluación Pregunta 2 (Radio) ---
+        const respuesta2 = datosFormulario.get('pregunta2');
+        if (respuesta2 === respuestasCorrectas.pregunta2) {
+            puntuacion++;
+        }
+
+        // --- Evaluación Pregunta 3 (Texto) ---
+        const respuesta3 = datosFormulario.get('pregunta3');
+        if (respuesta3) {
+            // Normalizar la respuesta del usuario (minúsculas, sin espacios extra)
+            const respuestaUsuarioNormalizada = respuesta3.toLowerCase().trim();
+            
+            // Comprobar si la respuesta del usuario está incluida en el array de respuestas válidas
+            if (respuestasCorrectas.pregunta3.includes(respuestaUsuarioNormalizada)) {
+                puntuacion++;
+            }
+        }
+        
+        // --- Mostrar Resultado ---
+        const mensajeFinal = ¡Fin del Cuestionario!\n\nTu puntuación es: ${puntuacion} / ${totalPreguntas}\n\n¡Sigue explorando y crafteando!;
+
+        alert(mensajeFinal); // Usamos la alerta simple para simular un mensaje de juego.
+    });
+
+</script>
+</body>
+</html>
